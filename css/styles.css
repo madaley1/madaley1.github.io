@@ -243,6 +243,11 @@ article section {
   bottom: 0;
 }
 
+.projCard.flex-row .btn-row{
+  width: 95%;
+  flex-direction: row-reverse;
+}
+
 .projCard .carousel-inner {
   width: 33vw;
 }
