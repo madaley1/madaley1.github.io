@@ -21,6 +21,8 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+      env: 
+        GH_TOKEN: ${{secrets.GITHUB_TOKEN}}
     - run: npm i
     - run: git config --global user.name "beep boop"
     - run: git config --global user.email "mor2daley@gmail.com"
