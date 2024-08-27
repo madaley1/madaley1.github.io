@@ -1,3 +1,5 @@
+# More Thoughts Related to the Building of Nova Blog
+
 I talked a little bit yesterday on the inspiration of this platform (that being [Bear Blog](https://bearblog.dev/), check it out as well), but I wanted to expand a bit on the thought process that led to me building this (also the code is open-source, check it out here: https://github.com/madaley1/nova-blog).
 
 I've been putting some thought into the current state of the internet for a while, and I know I'm not the only one who's come to this conclusion, but the internet has become both too simple and too complex at the same time. What I mean is the UI's of today are both sterile and packed with as much opinionated design as possible. The primary problem is that opinionated design is the same on almost every site, and those styles are deceptively complex for how simple they appear. 
