@@ -11,7 +11,7 @@ I also didn't want to build one though, so I looked at [Bear Blog](https://bearb
 
 So here it is.
 
-I built a blog.
+I built a blog platform (or framework? Not sure how to define it since it was on a whim).
 
 Despite that I didn't want to.
 
