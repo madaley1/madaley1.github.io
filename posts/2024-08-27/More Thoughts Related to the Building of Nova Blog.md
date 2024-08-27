@@ -26,4 +26,4 @@ I intentionally left this a bit unoptimized as well, because I wanted it to be a
 
 At the end of the day, this is primarily just a vision I had of moving towards a new internet age of both simplicity and complexity, but in a different way than currently implemented. Especially in an era of automatically generated content being spat out by GPT models and other learning models I feel it is important that humans begin to make their mark again.
 
-In case anyone wants to go down a similar route but doesn't necessarily want to use Nova Blog, this video is a great start into learning about the personal web: https://www.youtube.com/watch?v=zswyWBtF-7Y&sttick=0
+In case anyone wants to go down a similar route but doesn't necessarily want to use Nova Blog, this video is a great start into learning about the personal web: [https://www.youtube.com/watch?v=zswyWBtF-7Y&sttick=0](https://www.youtube.com/watch?v=zswyWBtF-7Y&sttick=0)
