@@ -8,7 +8,7 @@ Now to be clear, I don't mind complexity, nor clean design. In fact the current 
 
 I'm not saying we need to go through raw CSS messiness and randomly placed images all over pages again, but I do think we need to re-enter an age of exploration and artistry with the internet. Personal websites used to be unique, but nowadays we have places like Substack which essentially sterilize the concept of a personal blog site by making them all uniform. I have a bit of an ironic opinion for being an engineer who loves optimizing workflows and making things better, but sometimes things need to be a bit messier. Humans are messy, and I feel the internet, especially personal internet, should be deeply human, opinionated, and artistic. 
 
-Now to highlight one of the oxymoronic parts of my values when it comes to the Nova Blog tool, I optimized the publishing process down to three essential parts. Just write your md file, push it to github, and check it out on your site. This seems like an objective downgrade to things like WordPress right? I mean you can't make super stylized pages or posts, which goes against everything mentioned above, and there's no tagging or searchability to the platform. So how is it in any way better?
+Now to highlight one of the oxymoronic parts of my values when it comes to the Nova Blog tool, I optimized the publishing process down to three essential parts. Just write your md file, push it to github, and check it out on your site. This seems like an objective downgrade to things like WordPress right? I mean there's no tagging or searchability to the platform. Also it's streamlined and simple, like the sites mentioned as bad. So how is it in any way better?
 
 It's better for two reasons:
 1. There is virtually no friction to post
@@ -23,6 +23,8 @@ At the same time, I saw these other people building their blogs in raw HTML and 
 That's ok though, because I am in love with building functional scripts that do cool things, and that led me to build Nova Blog, despite how hard I tried to convince myself that I didn't need to build another tool right now.
 
 I intentionally left this a bit unoptimized as well, because I wanted it to be a jumping off point for beginners. They can either just spin it up, replace the placeholder text and get posting, or they can learn CSS and customize it (they can also choose to learn SCSS and update it that way), or they can dive into the generation file and customize how it works and completely overhaul it into their own creation. At the end of the day, it's simple enough for anyone at (almost) any level to use and make more complex at their pleasure.
+
+Essentially, like mentioned above, it's streamlined and uncustomized, but that's because if I added a framework to the customization, I'd be limiting people's imagination. A big issue is allowing customization, but limiting it to 1000+ options. That's worse than just not limiting it. It feels overwhelming and constricting at the same time, where this is just "I can do whatever I want", which feels freeing without any pressure to do anything if I don't want. Options without obligation.
 
 At the end of the day, this is primarily just a vision I had of moving towards a new internet age of both simplicity and complexity, but in a different way than currently implemented. Especially in an era of automatically generated content being spat out by GPT models and other learning models I feel it is important that humans begin to make their mark again.
 
