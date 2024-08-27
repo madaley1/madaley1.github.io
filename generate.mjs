@@ -12,7 +12,7 @@ const converter = new showdown.Converter();
 
 const getDirectories = (source) =>
   readdirSync(source, { withFileTypes: true })
-    .filter(dirent => dirent.isDirectory())
+    .filter(dirent => dirent.isDirectory() && dirent.name !== '.obsidian')
     .map(dirent => dirent.name);
 
 const getFiles = (source) =>
@@ -46,7 +46,7 @@ const generatePostsPage = (postPaths) => {
       const postPath = postPaths[i - 1];
 
       const splitPostPath = postPath.split('/');
-      
+      console.log(splitPostPath)
       const postName = splitPostPath[splitPostPath.length - 1];
       const postDate = splitPostPath[splitPostPath.length - 2];
       linkList += `
@@ -115,7 +115,7 @@ const generatePostFiles = (postPaths) => {
     // regeneration
     const htmlFile = postPath + ".html";
     
-    const currentFile = readFileSync(htmlFile, { encoding: 'utf8', flag: 'r' });
+    const currentFile = existsSync(htmlFile) ? readFileSync(htmlFile, { encoding: 'utf8', flag: 'r' }) : "";
     if(currentFile !== fileContents) {
       const fd = openSync(postPath+".html", 'w+');
       writeFileSync(fd, fileContents);

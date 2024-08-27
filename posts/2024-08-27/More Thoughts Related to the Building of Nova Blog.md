@@ -1,0 +1,27 @@
+I talked a little bit yesterday on the inspiration of this platform (that being [Bear Blog](https://bearblog.dev/), check it out as well), but I wanted to expand a bit on the thought process that led to me building this (also the code is open-source, check it out here: https://github.com/madaley1/nova-blog).
+
+I've been putting some thought into the current state of the internet for a while, and I know I'm not the only one who's come to this conclusion, but the internet has become both too simple and too complex at the same time. What I mean is the UI's of today are both sterile and packed with as much opinionated design as possible. The primary problem is that opinionated design is the same on almost every site, and those styles are deceptively complex for how simple they appear. 
+
+Now to be clear, I don't mind complexity, or clean design. What I dislike is how disinteresting the internet has become in the wake of modern design sensibilities. I was raised in the early 2000's, and was on the internet as long as I can remember. I grew up with it, and frankly the internet and I had our awkward teenage phases together. I remember web 1.0 design (if you want a blast to the past check out the [spacejam 1996 site](https://www.spacejam.com/1996/), or some [neocities projects](https://neocities.org/browse) for others who are trying to replicate web 1.0 and early web 2.0)
+
+I'm not saying we need to go through raw CSS messiness and randomly placed images all over pages again, but I do think we need to re-enter an age of exploration and artistry with the internet. Personal websites used to be unique, but nowadays we have places like Substack which essentially sterilize the concept of a personal blog site by making them all uniform. I have a bit of an ironic opinion for being an engineer who loves optimizing workflows and making things better, but sometimes things need to be a bit messier. Humans are messy, and I feel the internet, especially personal internet, should be deeply human, opinionated, and artistic. 
+
+Now to highlight one of the oxymoronic parts of my values when it comes to the Nova Blog tool, I optimized the publishing process down to three essential parts. Just write your md file, push it to github, and check it out on your site. This seems like an objective downgrade to things like WordPress right? I mean you can't make super stylized pages or posts, which goes against everything mentioned above, and there's no tagging or searchability to the platform. So how is it in any way better?
+
+It's better for two reasons:
+1. There is virtually no friction to post
+2. It is so simple almost nobody would be intimidated by it
+
+I've tried every type of content creation in the past. I've written music, I was a youtuber with a not-insignificant subscriber count (at the time I was doing it at least), I was a twitch streamer, and most importantly I've tried blogging. Ironically, while blogging on paper is the easiest to get going, it was the one I found the most friction with. I spun up WordPress with Dreamhost to make [sleepynova](https://sleepynova.blog/) (which despite having cancelled my rental of the domain, is still up for some reason). WordPress sucked to use as a blogger though, as while I wanted to just write and throw my thoughts out there, I felt pressured by the complexity of the system to make sure SEO was good, that I was in the proper number of words, that everything was tagged and searchable, that the images were good enough, and that I was actively pushing out content consistently to grow my audience.
+
+The result of that perceived pressure? I rarely posted, and I didn't post my thoughts either, rather I tried to find topics that would be interesting, constantly putting my writing through Grammarly (no hate to Grammarly though, the product is great) to ensure it was as coherent and readable as possible. Overall ended up hating my blog and avoided it to do literally anything else.
+
+At the same time, I saw these other people building their blogs in raw HTML and CSS, and I didn't want to do that either. It seemed like the same amount of effort, but just in different areas, and I'm not in love with HTML and CSS the way some people are. 
+
+That's ok though, because I am in love with building functional scripts that do cool things, and that led me to build Nova Blog, despite how hard I tried to convince myself that I didn't need to build another tool right now.
+
+I intentionally left this a bit unoptimized as well, because I wanted it to be a jumping off point for beginners. They can either just spin it up, replace the placeholder text and get posting, or they can learn CSS and customize it (they can also choose to learn SCSS and update it that way), or they can dive into the generation file and customize how it works and completely overhaul it into their own creation. At the end of the day, it's simple enough for anyone at (almost) any level to use and make more complex at their pleasure.
+
+At the end of the day, this is primarily just a vision I had of moving towards a new internet age of both simplicity and complexity, but in a different way than currently implemented. Especially in an era of automatically generated content being spat out by GPT models and other learning models I feel it is important that humans begin to make their mark again.
+
+In case anyone wants to go down a similar route but doesn't necessarily want to use Nova Blog, this video is a great start into learning about the personal web: https://www.youtube.com/watch?v=zswyWBtF-7Y&sttick=0
