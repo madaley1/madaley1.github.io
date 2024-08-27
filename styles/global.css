@@ -26,6 +26,9 @@ body #posts {
 body #posts .postLink {
   margin-bottom: 1em;
 }
+body small {
+  font-size: xx-small;
+}
 body blockquote p {
   display: inline;
 }
