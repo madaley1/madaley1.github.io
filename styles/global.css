@@ -42,5 +42,14 @@ body blockquote::before {
   font-size: 1.5em;
   vertical-align: bottom;
 }
+body .kofi {
+  position: fixed;
+  bottom: 10px;
+  display: flex;
+  flex-flow: column;
+}
+body .kofi img {
+  width: 150px;
+}
 
 /*# sourceMappingURL=global.css.map */

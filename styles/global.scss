@@ -46,5 +46,14 @@ body{
       vertical-align: bottom;
     }
   }
+  .kofi{
+    position: fixed;
+    bottom: 10px;
+    display: flex;
+    flex-flow: column;
+    img{
+      width: 150px;
+    }
+  }
 }
 
