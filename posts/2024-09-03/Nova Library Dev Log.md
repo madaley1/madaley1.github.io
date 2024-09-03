@@ -2,9 +2,11 @@
 
 ## Nova Blog
 Made the favicon for the Nova Blog, but figured I should try to have AI generate something for me since I didn't want to have to break out a photo editor just to make a 64x64 simple logo, so I made a really quick and dirty shape and tried to put it into the AI to clean it up. Here's the results:
-Initial:
+
+##### Initial:
 ![[Untitled.png]]
-Result:
+
+###### Result:
 ![[symmetrical_32x32_logo.png]]
 
 Not very good at prompting, but here's what I put in: 
@@ -14,3 +16,4 @@ Safe to say AI isn't taking our jobs anytime soon. Mine isn't perfect, but here'
 ![[blackBg.png]]
 
 
+Also found out the images do not translate, so I'm updating the generation file to compensate
