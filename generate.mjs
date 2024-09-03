@@ -95,7 +95,7 @@ const generatePostFiles = (postPaths) => {
           <title>${postTitle} | Nova Blog</title>
           <meta name="viewport" content="width=device-width,initial-scale=1" />
           <meta name="description" content="" />
-          <link rel="icon" href="favicon.png">
+          <link rel="icon" type="image/x-icon" href="/assets/favicon_io/favicon.ico">
           <link rel="stylesheet" href="/styles/global.css"/>
           <link rel="stylesheet" href="/styles/posts.css"/>
         </head>
