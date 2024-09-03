@@ -12,7 +12,7 @@ const converter = new showdown.Converter();
 
 const getDirectories = (source) =>
   readdirSync(source, { withFileTypes: true })
-    .filter(dirent => dirent.isDirectory() && dirent.name !== '.obsidian')
+    .filter(dirent => dirent.isDirectory())
     .map(dirent => dirent.name);
 
 const getFiles = (source) =>
@@ -24,7 +24,19 @@ const getFiles = (source) =>
 const translateMdToHTML = (source) => {
   if(!existsSync(source)) throw new Error('file does not exist');
   const data = readFileSync(source, "utf8");
-  return converter.makeHtml(data);
+  let html = converter.makeHtml(data);
+  const images = data.match(/(!\[\[.*\]\])/g);
+  console.log(images)
+  if(!images) return html
+  images.forEach((value, index)=>{
+    console.log(value)
+    const uri = value.substring(3, value.length - 2);
+    const imgTag = `<img src="${uri}"/>`;
+    html = html.replace(/(!\[\[.*\]\])/, imgTag);
+    console.log(imgTag)
+  })
+  
+  return html
 }
 
 const capitalizeFirstLetter = (string) => {
@@ -46,7 +58,7 @@ const generatePostsPage = (postPaths) => {
       const postPath = postPaths[i - 1];
 
       const splitPostPath = postPath.split('/');
-      console.log(splitPostPath)
+      
       const postName = splitPostPath[splitPostPath.length - 1];
       const postDate = splitPostPath[splitPostPath.length - 2];
       linkList += `
@@ -95,7 +107,7 @@ const generatePostFiles = (postPaths) => {
           <title>${postTitle} | Nova Blog</title>
           <meta name="viewport" content="width=device-width,initial-scale=1" />
           <meta name="description" content="" />
-          <link rel="icon" type="image/x-icon" href="/assets/favicon_io/favicon.ico">
+          <link rel="icon" href="favicon.png">
           <link rel="stylesheet" href="/styles/global.css"/>
           <link rel="stylesheet" href="/styles/posts.css"/>
         </head>
@@ -115,7 +127,7 @@ const generatePostFiles = (postPaths) => {
     // regeneration
     const htmlFile = postPath + ".html";
     
-    const currentFile = existsSync(htmlFile) ? readFileSync(htmlFile, { encoding: 'utf8', flag: 'r' }) : "";
+    const currentFile = readFileSync(htmlFile, { encoding: 'utf8', flag: 'r' });
     if(currentFile !== fileContents) {
       const fd = openSync(postPath+".html", 'w+');
       writeFileSync(fd, fileContents);
