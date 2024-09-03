@@ -5,7 +5,7 @@ Made the favicon for the Nova Blog, but figured I should try to have AI generate
 #### Initial:
 ![[Untitled.png]]
 
-##### Result:
+#### Result:
 
 ![[symmetrical_32x32_logo.png]]
 
