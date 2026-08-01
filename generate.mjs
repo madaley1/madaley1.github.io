@@ -68,7 +68,11 @@ const collectPosts = () => {
     if (!dateEntry.isDirectory()) continue;
     const dateDir = join(POSTS_DIR, dateEntry.name);
     for (const fileEntry of readdirSync(dateDir, { withFileTypes: true })) {
-      if (!fileEntry.isFile() || extname(fileEntry.name) !== '.md') continue;
+      if (!fileEntry.isFile()) continue;
+      if (extname(fileEntry.name) !== '.md') {
+        cpSync(join(dateDir, fileEntry.name), join(DIST, 'posts', dateEntry.name, fileEntry.name));
+        continue;
+      }
       const slug = basename(fileEntry.name, '.md');
       const mdPath = join(dateDir, fileEntry.name);
       const parsed = matter(readFileSync(mdPath, 'utf8'));
