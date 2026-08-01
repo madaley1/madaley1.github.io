@@ -49,7 +49,7 @@ const writeFile = (relPath, contents) => {
 // Obsidian-style image wikilinks: ![[path/img.png]] -> ![](path/img.png).
 // Applied to the markdown *before* conversion so we don't regex over HTML.
 const rewriteWikilinkImages = (md) =>
-  md.replace(/!\[\[([^\]]+)\]\]/g, (_m, uri) => `![](${uri.trim()})`);
+  md.replace(/!\[\[([^\]]+)\]\]/g, (_m, uri) => `![](${encodeURI(uri.trim())})`);
 
 const normalizeDate = (value, fallback) => {
   if (!value) return fallback;

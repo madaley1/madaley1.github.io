@@ -7,14 +7,14 @@ Made the favicon for the Nova Blog, but figured I should try to have AI generate
 
 #### Result:
 
-![[symmetrical_32x32_logo.png]]
+![[symmetrical_32x32_logo 1.png]]
 
 Not very good at prompting, but here's what I put in: 
 > Could you turn this into a 32x32 pixel art style logo and make it symmetrical, fixing up the proportions of the sides?
 
 Safe to say AI isn't taking our jobs anytime soon. Mine isn't perfect, but here's what I wanted:
 
-![[blackBg.png]]
+![[blackBg 1.png]]
 
 Also found out the images do not translate, so I'm updating the generation file to compensate
 
