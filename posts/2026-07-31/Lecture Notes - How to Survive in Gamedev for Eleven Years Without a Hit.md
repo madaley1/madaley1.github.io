@@ -21,5 +21,7 @@ In summary, it is an enlightening talk. Much of the talk is his story, so there 
 In the end though, this relies less on if you are capable of making good games, and more on if you can survive the process.
 
 Other posts mentioned in the talk:
+
 [Minimum Sustainable Success](https://www.gamedeveloper.com/business/minimum-sustainable-success) by Dan Cook
+
 [Cultivating Burning Desire](https://stevepavlina.com/blog/2005/03/cultivating-burning-desire/) by Steve Pavlina
